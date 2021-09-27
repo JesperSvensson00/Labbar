@@ -1,3 +1,5 @@
+#Jesper och Jonas
+
 #Konverteringsprogram med grafiskt gränssnitt
 
 from tkinter import *
