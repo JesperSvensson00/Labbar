@@ -1,5 +1,5 @@
 def main():
-    # Skriver ut en multiplikationstabell
+    # Skriver ut en multiplikationstabell för 9
     n = 9
     print()
     print("Multiplikationstabell för", n)
