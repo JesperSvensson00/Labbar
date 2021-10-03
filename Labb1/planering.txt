@@ -1,0 +1,23 @@
+Priser för rabatterade biljetter:
+
+Enkel:      25  kr
+30-dagar:   640 kr
+
+
+
+Vad ska programmet göra:
+  - Vad är indata respektive utdata till ditt program? Vilka typer av data är det?
+    Indata: Antalet resor per månad - int
+    Utdata: Vilken typ som är bäst - string
+            Eventuellt hur mycket man sparar
+
+  - Vilka beräkningar behöver du göra? Skriv upp formlerna!
+    Vi behöver veta vad kostnaden blir per resa med 30-dagarsbiljett.
+    pris_30dagar/antal_resor = pris_per_resa_30dagar
+    
+  
+  - Villket villkor ska du använda för att avgöra vad som är billigast?
+    pris_per_resa_30dagar < pris_enkel
+
+  - I vilken ordning ska alltihopa göras?
+    Först beräkna priserna(andra punkten). Sedan jämför vi priserna skriver ut svaret beroende på vad vilkoret ger.
