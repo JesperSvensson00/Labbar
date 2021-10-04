@@ -9,7 +9,7 @@ Vad ska programmet göra:
   - Vad är indata respektive utdata till ditt program? Vilka typer av data är det?
     Indata: Antalet resor per månad - int
     Utdata: Vilken typ som är bäst - string
-            Eventuellt hur mycket man sparar
+            Eventuellt hur mycket man sparar - float
 
   - Vilka beräkningar behöver du göra? Skriv upp formlerna!
     Vi behöver veta vad kostnaden blir per resa med 30-dagarsbiljett.
