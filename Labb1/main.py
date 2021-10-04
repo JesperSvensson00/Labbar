@@ -12,4 +12,6 @@ if pris_per_resa30dagar < PRIS_ENKEL:
 else: 
     print("Enkelresa är billigare!")
 
-#Vi är bäst.
+#Test data:
+# Indata: 30, Utdata: Månadskort är billigast! Pris per resa blir 12.8 kr.
+# Indata: 25, Utdata: Enkelresa är billigare!
