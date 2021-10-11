@@ -13,5 +13,5 @@ else:
     print("Enkelresa är billigare!")
 
 #Test data:
-# Indata: 30, Utdata: Månadskort är billigast! Pris per resa blir 12.8 kr.
+# Indata: 50, Utdata: Månadskort är billigast! Pris per resa blir 12.8 kr.
 # Indata: 25, Utdata: Enkelresa är billigare!
