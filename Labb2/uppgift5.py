@@ -2,9 +2,8 @@
 
 import random
 
+
 # Skriver ut info om hur långe ne foot är i meter
-
-
 def foot():
     foot = 30.48
     print("En foot är", foot, "cm.")
