@@ -1,6 +1,8 @@
 import random
 
 # Skriver ut info om hur långe ne foot är i meter
+
+
 def foot():
     foot = 30.48
     print("En foot är", foot, "cm.")
@@ -22,6 +24,8 @@ def skriv_ut_tabell():
 
 # Denna funktionen slumpar en längd i meter och låter användaren gissa på vad det blir i foot
 def gissa():
+    print("\n\nNu kommer du få gissa på vad talet (i meter) nedan blir i foot:")
+
     # Slumpar ett tal mellan 1 och 10 och skriver ut det
     tal = random.randint(1, 10)
     print("Antal meter:", tal)
