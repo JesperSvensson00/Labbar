@@ -1,3 +1,5 @@
+# Jesper och Kawthar 2021-10-12
+
 import random
 
 # Skriver ut info om hur långe ne foot är i meter
@@ -52,3 +54,28 @@ def main():
 
 
 main()
+
+'''
+-----När vi kör programmet visas följande-----
+En foot är 30.48 cm.
+Hur många gånger vill du köra loopen? *Skriver in 10*
+0.3048
+0.6096
+0.9144000000000001
+1.2192
+1.524
+1.8288000000000002
+2.1336
+2.4384
+2.7432000000000003
+3.048
+
+Nu kommer du få gissa på vad talet (i meter) nedan blir i foot:
+Antal meter: 8
+Skriv vad det blir i foot: *Skriver in 4*
+Fel!
+Skriv vad det blir i foot: *Skriver in 2.4384*
+Rätt!
+Du gjorde 2 försök.
+-----Slut-----
+'''
