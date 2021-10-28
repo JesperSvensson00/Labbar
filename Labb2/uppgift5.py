@@ -18,7 +18,8 @@ def meter_till_foot(längd):
 
 # Skriver ut en multiplikations tabell förett angivet värde
 def skriv_ut_tabell():
-    antal_gånger = int(input("Hur många gånger vill du köra loopen? "))
+    antal_gånger = int(
+        input("Hur många tal vill du se från multiplikationstabellen för 1 foot? "))
     for i in range(1, antal_gånger+1):
         print(meter_till_foot(i))
 
@@ -57,7 +58,7 @@ main()
 '''
 -----När vi kör programmet visas följande-----
 En foot är 30.48 cm.
-Hur många gånger vill du köra loopen? *Skriver in 10*
+Hur många tal vill du se från multiplikationstabellen för 1 foot? *Skriver in 10*
 0.3048
 0.6096
 0.9144000000000001

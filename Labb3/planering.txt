@@ -1,0 +1,7 @@
+Vi vill läsa in en fil med alla glosor. Användaren anger filnmanet.
+Vi kan då använda funktionen fildata för att få ut alla glosor.
+Sen kan vi använda funktionen createDictionary för att skapa en dictionary.
+
+Sen kommer glosförhöret...
+
+
