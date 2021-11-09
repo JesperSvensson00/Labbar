@@ -3,7 +3,8 @@
 class Klocka:
     def __init__(self):
         self.time = 0  # Tid i minuter dvs en dag/24 h är 1440 min
-
+     
+    
     def __str__(self):
         timmar = (int(self.time/60))  # Antalet hela timmar int() avrundra ner
         minuter = (self.time % 60)  # Antalet minuter
@@ -14,9 +15,9 @@ class Klocka:
 
         return str(timmar) + ':' + str(minuter)
 
+    
     # Lägger till en minut till klockan
     # Nollställer om den tickar över 24 timmar
-
     def tick(self):
         self.time += 1
 
@@ -26,8 +27,8 @@ class Klocka:
             antalet_dygn = int(timmar/24)
             self.time = self.time - antalet_dygn*24*60  # Tar bort antalet dagar i minuter
 
+            
     # Printa ut tiden
-
     def printKlocka(self):
         timmar = (int(self.time/60))  # Antalet hela timmar int() avrundra ner
         minuter = (self.time % 60)  # Antalet minuter
@@ -38,8 +39,8 @@ class Klocka:
 
         print(str(timmar) + ':' + str(minuter))
 
+        
     # Sätter tiden till ett angivet värde
-
     def setTime(self, time):
         self.time = time
 
@@ -49,18 +50,18 @@ class Klocka:
             antalet_dygn = int(timmar/24)
             self.time = self.time - antalet_dygn*24*60  # Tar bort antalet dagar i minuter
 
+            
     # Returnera tiden i antalet minuter
-
     def getTime(self):
         return self.time
 
+    
     # Returnera tiden i antalet minuter minus hela timmar
-
     def getMinutes(self):
         return self.time % 60
 
+    
     # Returnera antalet hela timmar
-
     def getHours(self):
         return int(self.time/60)
 
