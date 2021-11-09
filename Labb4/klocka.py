@@ -1,10 +1,12 @@
 # Erik Smeds och Jesper Svensson 2021-11-09
 
 class Klocka:
-    def __init__(self):
-        self.time = 0  # Tid i minuter dvs en dag/24 h är 1440 min
+  # Init funktion
+    def __init__(self, time):
+        self.time = time  # Tid i minuter dvs en dag/24 h är 1440 min
      
     
+    # String funktion
     def __str__(self):
         timmar = (int(self.time/60))  # Antalet hela timmar int() avrundra ner
         minuter = (self.time % 60)  # Antalet minuter
@@ -20,13 +22,11 @@ class Klocka:
     # Nollställer om den tickar över 24 timmar
     def tick(self):
         self.time += 1
-
+        
         # Om tiden överstiger 24 timmar börjar den om på 0 som en vanlig klocka
-        if self.time > 24 * 60:
-            timmar = (int(self.time/60))
-            antalet_dygn = int(timmar/24)
-            self.time = self.time - antalet_dygn*24*60  # Tar bort antalet dagar i minuter
-
+        self.time = self.time%(24*60)
+        
+        
             
     # Printa ut tiden
     def printKlocka(self):
@@ -37,7 +37,7 @@ class Klocka:
         timmar = timmar if timmar > 9 else '0' + str(timmar)
         minuter = minuter if minuter > 9 else '0' + str(minuter)
 
-        print(str(timmar) + ':' + str(minuter))
+        print("Klockan är: " + str(timmar) + ':' + str(minuter))
 
         
     # Sätter tiden till ett angivet värde
@@ -45,10 +45,7 @@ class Klocka:
         self.time = time
 
         # Om tiden överstiger 24 timmar börjar den om på 0 som en vanlig klocka
-        if self.time > 24 * 60:
-            timmar = (int(self.time/60))
-            antalet_dygn = int(timmar/24)
-            self.time = self.time - antalet_dygn*24*60  # Tar bort antalet dagar i minuter
+        self.time = self.time%(24*60)
 
             
     # Returnera tiden i antalet minuter
@@ -66,49 +63,53 @@ class Klocka:
         return int(self.time/60)
 
 
-klocka = Klocka()
+klocka = Klocka(0)
 
 
-# Test funktioner
+# Test funktion 1
 def test1(klocka):
-    print('Test 1')
+    print('------- Test 1 --------\nTestar printKlocka')
     klocka.tick()
-    print("Efter ett tick är klockan", klocka)
+    klocka.printKlocka()
 
 
+# Test funktion 2
 def test2(klocka):
-    print('Test 2')
+    print('------- Test 2 --------')
 
-    print(klocka)
+    print("Tid innan tick:", klocka)
 
     klocka.tick()
 
-    print(klocka)
+    print("Tid efter tick:", klocka)
 
 
+# Test funktion 3
 def test3(klocka):
-    print('Test 3')
+    print('------- Test 3 --------')
 
-    print(klocka)
+    print("Tid innan set time:", klocka)
 
     klocka.setTime(6686)
 
     klocka.tick()
 
-    klocka.printKlocka()
+    print("Tid innan set time och tick:", klocka)
 
 
+# Här körs alla test funktioner
 test1(klocka)
 test2(klocka)
 test3(klocka)
 
 '''
-Test 1
-Efter ett tick är klockan 00:01
-Test 2
-00:01
-00:02
-Test 3
-00:02
-15:27
+------- Test 1 --------
+Testar printKlocka
+Klockan är: 00:01
+------- Test 2 --------
+Tid innan tick: 00:01
+Tid efter tick: 00:02
+------- Test 3 --------
+Tid innan set time: 00:02
+Tid innan set time och tick: 15:27
 '''
