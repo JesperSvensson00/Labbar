@@ -53,8 +53,7 @@ def createTrackList(filename):
     track_list = []  # Lista med alla track objekt
 
     # Går igenom listan med data-listor (hoppar över den första som är rubriker)
-    for i in range(1, len(all_rows)):
-        track_data = all_rows[i]
+    for track_data in all_rows[1:]:
 
         # All "intresant" data
         track_name = track_data[1]
