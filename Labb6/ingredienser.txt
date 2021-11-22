@@ -1,0 +1,16 @@
+Adas Polo;ris;linser;lök;saffran;russin
+Burritos;lök;zucchini;olja;bönor;salt;chilipeppar;vetemjöl;gluten;tomat;chili;citron;koriander
+Chili con carne;chili;lök;vitlök;paprika;bönor;olja;kött;salt;peppar
+Falafel med myntasås;kikärter;vitlök;ägg;koriander;potatismjöl;spiskummin;yoghurt;mjölk;lime;mynta
+Fiskgratäng;fisk;salt;smör;vetemjöl;gluten;mjölk;dill;ost;mjölk;morot
+Gräddtårta;vetemjöl;gluten;socker;smör;mjölk;ägg;grädde;mjölk;jordgubbar
+Jordnötskakor;jordnötter;sirap;kokos;socker;vanliljsocker;cornflakes;majs
+Kladdkaka;choklad;socker;ägg
+Minestrone;bönor;lök;selleri;morot;tomat;salt;olja;ris
+Paella;olja;lök;vitlök;ris;saffran;selleri;paprika;zucchini;vin;tomater;oliver
+Pannkakor;vetemjöl;gluten;salt;mjölk;ägg;smör;mjölk
+Rårakor;potatis;smör;mjölk;salt
+Räksallad;räkor;avocado;sallad;gurka;citron;ägg;senap;gräddfil
+Spaghetti carbonara;vetemjöl;gluten;fläsk;kött;salt;ägg;peppar
+Spenatlasagne;smör;mjölk;vetemjöl;gluten;salt;peppar;lök;olja;spenat;ost;mjölk;lasagneplattor;gluten
+Tofugryta;olja;vitlök;chili;tofu;soja;paprika;blomkål
